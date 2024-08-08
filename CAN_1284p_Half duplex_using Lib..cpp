@@ -19,7 +19,7 @@ int main(void)
 
 	message0_TX_D0.id = 0x01;        //  In struct you should always declare variable inside a function otherwise it wont work
 	message0_TX_D0.length = 0x08;
-	message0_TX_D0.rtr = 0;
+	message0_TX_D0.rtr = 0;				// some random values
 	message0_TX_D0.data [0] = 0x01;
 	message0_TX_D0.data [1] = 0x02;
 	message0_TX_D0.data [2] = 0x04;
