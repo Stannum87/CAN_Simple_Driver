@@ -49,15 +49,15 @@ int main(void)
 		asm volatile ("NOP"); // blank time
 	
 	// CAN transmitt data
-		CAN_TX_Load_D0(&message0_TX_D0); 
+		CAN_TX_Load(&message0_TX_D0); 
 		
 	//	_delay_ms(1);  // dont put this delay between TX and RX
 		
 	// CAN receive the data if available, and put it in RX struct
-		CAN_RX_Unload_D0(&message0_RX_D0);
+		CAN_RX_Unload(&message0_RX_D0);
 	 
 	// display the data in the port
-		PORTC = message0_RX_D0.data[x];
+		PORTC = message0_RX_D0.data[0];
 		
     }
 	
