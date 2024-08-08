@@ -29,8 +29,6 @@ int main(void)
 	message0_TX_D0.data [6] = 64;
 	message0_TX_D0.data [7] = 128;
 	
-//  CAN_RX_receive_D0();
-	
 	CANMessage message0_RX_D0;
 
 	message0_RX_D0.id = 0x00;        //  In struct you should always declare variable inside a function otherwise it wont work
